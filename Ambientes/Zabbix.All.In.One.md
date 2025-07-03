@@ -27,7 +27,7 @@ services:
       ZBX_HISTORYINDEXCACHESIZE: 1024M
       ZBX_TRENDCACHESIZE: 1024M
       ZBX_VALUECACHESIZE: 1024M
-      DB_SERVER_HOST: "IP" 
+      DB_SERVER_HOST: "db" 
       DB_PORT: 5432
       POSTGRES_USER: "zabbix"
       POSTGRES_PASSWORD: "zabbix123"
@@ -54,7 +54,7 @@ services:
     networks:
       - zabbix7
     environment:
-      DB_SERVER_HOST: "IP"
+      DB_SERVER_HOST: "db"
       DB_PORT: 5432
       POSTGRES_USER: "zabbix"
       POSTGRES_PASSWORD: "zabbix123"
